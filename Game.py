@@ -44,5 +44,15 @@ elif player_class == "R":
     health = health + 10
     print(f"You have {health} health")
 
+
+attack = 0
+
+If player_class == "W"
+    input("Select your weapon:\n"
+"A-A melee weapon and shield\n"
+"T-Two-handed weapon\n") 
+
+
+
 player = Player(f"{player_name}", {player_class}, "pistol", 100)
 print(player)
