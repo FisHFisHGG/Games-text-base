@@ -3,7 +3,7 @@ player_name = input("Enter your name: ")
 player_class = input("Select your class:\n"
 "W-Warrior\n"
 "M-Mage\n"
-"R-Rogue\n")
+"R-Rogue\n").upper()
 
 class Player:
     def __init__(self, name, role, weapon, health):
@@ -50,7 +50,7 @@ attack = 30
 if player_class == "W":
    player_weapon = input("Select your weapon:\n"
 "A-A melee weapon and shield\n"
-"T-Two-handed weapon\n")
+"T-Two-handed weapon\n").upper()
    if player_weapon == "A":
        attack = attack + 15
        print(f"You have {attack} attack")
@@ -63,7 +63,7 @@ if player_class == "W":
 elif player_class == "M":
     player_weapon = input("Select your weapon:\n"
 "B-Bow\n"
-"S-Staff\n")
+"S-Staff\n").upper()
     if player_weapon == "B":
         attack = attack + 25
         print(f"You have {attack} attack")
@@ -76,7 +76,7 @@ elif player_class == "M":
 elif player_class == "R":
     player_weapon = input("Select your weapon:\n"
 "D-Dagger\n"
-"H-Hammer\n")
+"H-Hammer\n").upper()
     if player_weapon == "D":
         attack = attack + 20
         print(f"You have {attack} attack")
