@@ -87,5 +87,5 @@ elif player_class == "R":
 
 
 
-player = Player(f"{player_name}", {player_class}, "pistol", 100)
+player = Player(f"{player_name}", {player_class}, {player_weapon}, 100)
 print(player)
